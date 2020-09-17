@@ -1,0 +1,126 @@
+/*Fonts*/
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Roboto'),
+		url('../fonts/robotobold.woff2') format(woff2),
+		url('../fonts/robotobold.woff') format(woff);
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Roboto');
+	url('../fonts/robotomedium.woff2') format(woff2);
+	url('../fonts/robotomedium.woff') format(woff);
+}
+
+/*Variables*/
+
+:root {
+	--body-background-color1: #849D8F;
+	--body-background-color2: #8996A6;
+	--body-background-color3: #9D8B84;
+	--basic-font-color: #FFFFFF;
+	--black-color: #323232;
+	--hover-pink-color: #FBDED7;
+	--active-pink-color: #F6B5A5;
+} 
+
+
+/*Global*/
+
+body {
+	min-width: 1200px;
+	margin: 0;
+	padding: 9px 27px;
+	font-family: 'Roboto', Arial, sans-serif;
+	background-color: var(--body-background-color1);
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	color: var(--basic-font-color);
+}
+
+.page a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*Header*/
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-font-color);
+	background-color: transparent;
+}
+
+.main-menu,
+.sub-menu {
+	list-style: none;
+}
+
+.main-menu > li {
+	position: relative;
+	display: inline-block;
+	white-space: nowrap;
+}
+.main-menu a {
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-font-color);
+	padding: 9px 13px;
+}
+
+.main-menu a:hover {
+	color: var(--black-color);
+	background-color: var(--basic-font-color);
+	border-radius: 26px;
+}
+
+
+.sub-menu {
+	position: absolute;
+	width: 143px;
+	background-color: var(--basic-font-color);
+	border-radius: 4px;
+	font-weight: normal;
+	padding-inline-start: 0px;
+}
+
+
+.sub-menu a {
+	color: var(--black-color);
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.main-menu > li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu a:hover {
+	background-color: var(--hover-pink-color);
+	border-radius: 0px;
+}
+
+.sub-menu a:active {
+	background-color: var(--active-pink-color);
+}
+
+.main-header-button {
+	color: var(--basic-font-color);
+	font-size: 14px;
+	font-height: 16px;
+}
+
