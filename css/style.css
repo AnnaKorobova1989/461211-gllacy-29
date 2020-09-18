@@ -186,7 +186,34 @@ img {
 	box-shadow: inset 0px 2px 2px #942718;
 }
 
+.ice-cream1 {
+	width: 683px;
+	height: 584px;
+	background-image: url("../img/ice-cream.png"), url("../img/ice-cream2.png");
+	background-position: left, right;
+	background-repeat: no-repeat;
+}
+
+.ice-cream2 {
+	width: 683px;
+	height: 584px;
+	background-image: url("../img/choco-ice-cream.png"), url("../img/lime-ice-cream.png");
+	background-position: left, right;
+	background-repeat: no-repeat;
+}
+
+.ice-cream3 {
+	width: 683px;
+	height: 584px;
+	background-image: url("../img/ice-cream3.png"), url("../img/ice-cream4.png");
+	background-position: left, right;
+	background-repeat: no-repeat;
+}
+
 .raspberry-free {
+	width: 560px;
+	height: 229px;
+	background-image: url("../img/raspberry.jpg");
 	background-color: var(--raspberry-free);
 	border-radius: 16px;
 } 
@@ -226,6 +253,9 @@ img {
 }
 
 .chocolate-free {
+	width: 560px;
+	height: 229px;
+	background-image: url(../img/choco.jpg);
 	background-color: var(--chocolate-free);
 	border-radius: 16px;
 }
