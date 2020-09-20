@@ -1,11 +1,11 @@
 /*Fonts*/
 @font-face {
-	font-family: 'Roboto';
+  font-family: 'Roboto';
 	font-style: normal;
 	font-weight: bold;
-	src: local('Roboto'),
-		url('../fonts/robotobold.woff2') format(woff2),
-		url('../fonts/robotobold.woff') format(woff);
+  src: local('Roboto'),
+	url('../fonts/robotobold.woff2') format(woff2),
+	url('../fonts/robotobold.woff') format(woff);
 }
 
 @font-face {
@@ -34,7 +34,7 @@
 	--mailing-background: #F8F7F4;
 	--mailing-text-color: #5A5A5A;
 	--contacts-background-color: #FEFEFE;
-} 
+}
 
 
 /*Global*/
@@ -77,7 +77,7 @@ img {
 .main-menu > li {
 	position: relative;
 	display: inline-block;
-	white-space: nowrap;
+
 }
 .main-menu a {
 	display: block;
@@ -126,13 +126,13 @@ img {
 	background-color: var(--active-pink-color);
 }
 
-.main-header-button a {
+.main-header-buttons a {
 	color: var(--basic-font-color);
 	font-size: 14px;
 	font-height: 16px;
 }
 
-.main-header-button a:hover {
+.main-header-buttons a:hover {
 	color: var(--black-color);
 	background-color: var(--basic-font-color);
 }
@@ -162,10 +162,10 @@ img {
 }
 
 .best-offer-button {
-	display: table-cell;
+	display: inline-block;
 	text-align: center;
 	font-size: 32px;
-	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76); 
+	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 	vertical-align: middle;
 	color: var(--basic-font-color);
 	font-weight: bold;
@@ -216,7 +216,7 @@ img {
 	background-image: url("../img/raspberry.jpg");
 	background-color: var(--raspberry-free);
 	border-radius: 16px;
-} 
+}
 
 .raspberry-free h3 {
 	font-size: 35px;
@@ -231,7 +231,7 @@ img {
 }
 
 .button {
-	display: table-cell;
+	display: inline-block;
 	color: var(--basic-font-color);
 	font-weight: bold;
 	font-size: 18px;
@@ -397,4 +397,3 @@ img {
 	line-height: 18px;
 	font-weight: normal;
 }
-
