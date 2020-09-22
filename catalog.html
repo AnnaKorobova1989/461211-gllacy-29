@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -36,71 +36,14 @@
     </header>
     <main>
       <div>
-        <a href="#">Главная</a>
-        <a href="#">Каталог</a>
-        <a href="#">Сливочное</a>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a>Сливочное</a></li>
+        </ul>
       </div>
       <h1>Сливочное мороженое</h1>
-      <form action="https://echo.htmlacademy.ru/courses" method="get">
-        <fieldset>
-          <legend>Сортировка:</legend>
-          <select class="sorting-filters" id="sorting-filters" name="sorting-filters">
-            <option value="popularity">по популярности</option>
-            <option value="inexpensive-first">сначала недорогие</option>
-            <option value="expensive-first">сначала дорогие</option>
-            <option value="fat-contant">по жирности</option>
-          </select>
-        </fieldset>
-        <fieldset>
-          <legend>Цена: 100р - 500р</legend>
-          <input type="range" name="price-range" id="price-range" min="100" max="500" step="5">
-        </fieldset>
-        <fieldset>
-          <legend>Жирность:</legend>
-          <ul>
-            <li>
-              <input type="radio" name="fat-filters" id="fat-0" value="0">
-              <label for="fat-0"> 0%</label>
-            </li>
-            <li>
-              <input type="radio" name="fat-filters" id="fat-10" value="10" checked>
-              <label for="fat-10">до 10%</label>
-            </li>
-            <li>
-              <input type="radio" name="fat-filters" id="fat-30" value="30">
-              <label for="fat-30">до 30%</label></li>
-            <li>
-              <input type="radio" name="fat-filters" id="fat-more-30" value="more-30">
-              <label for="fat-more-30">выше 30%</label></li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Наполнители</legend>
-          <ul>
-            <li>
-              <input type="checkbox" id="filler-chocolate" name="filler-chocolate" value="chocolate" checked>
-              <label for="filler-chocolate">шоколадные</label>
-            </li>
-            <li>
-              <input type="checkbox" id="filler-sugar" name="filler-sugar" value="sugar" checked>
-              <label for="filler-sugar">сахарные присыпки</label>
-            </li>
-            <li>
-              <input type="checkbox" id="filler-fruits" name="filler-fruits" value="fruits">
-              <label for="filler-fruits">фрукты</label>
-            </li>
-            <li>
-              <input type="checkbox" id="filler-syrup" name="filler-syrup" value="syrup">
-              <label for="filler-syrup">сиропы</label>
-            </li>
-            <li>
-              <input type="checkbox" id="filler-jam" name="filler-jam" value="jam">
-              <label for="filler-jam">джемы</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit" name="button">Применить</button>
-      </form>
+      <!--Здесь будет форма для фильтрации-->
       <h2>Каталог сливочного мороженого</h2>
       <ul>
         <li>
@@ -109,7 +52,7 @@
           <h3>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </h3>
-          <button type="button" name="button">Быстрый просмотр</button>
+          <button>Быстрый просмотр</button>
         </li>
         <li>
           <img src="https://via.placeholder.com/267x267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -117,7 +60,7 @@
           <h3>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           </h3>
-          <button type="button" name="button">Быстрый просмотр</button>
+          <button>Быстрый просмотр</button>
         </li>
         <li>
           <img src="https://via.placeholder.com/267x267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -125,7 +68,7 @@
           <h3>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </h3>
-          <button type="button" name="button">Быстрый просмотр</button>
+          <button>Быстрый просмотр</button>
         </li>
         <li>
           <img src="https://via.placeholder.com/267x267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -133,7 +76,7 @@
           <h3>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </h3>
-          <button type="button" name="button">Быстрый просмотр</button>
+          <button>Быстрый просмотр</button>
         </li>
         <li>
           <img src="https://via.placeholder.com/267x267" alt="Сливочное с брусничным джемом">
@@ -141,7 +84,7 @@
           <h3>
             <a href="#">Сливочное с брусничным джемом</a>
           </h3>
-          <button type="button" name="button">Быстрый просмотр</button>
+          <button>Быстрый просмотр</button>
         </li>
         <li>
           <img src="https://via.placeholder.com/267x267" alt="Сливочно-черничное с цельными ягодами черники">
@@ -149,7 +92,7 @@
           <h3>
             <a href="#">Сливочно-черничное с цельными ягодами ченики</a>
           </h3>
-          <button type="button" name="button">Быстрый просмотр</button>
+          <button>Быстрый просмотр</button>
         </li>
         <li>
           <img src="https://via.placeholder.com/267x267" alt="Сливочно-лимонное с карамельной присыпкой">
@@ -157,7 +100,7 @@
           <h3>
             <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
           </h3>
-          <button type="button" name="button">Быстрый просмотр</button>
+          <button>Быстрый просмотр</button>
         </li>
         <li>
           <img src="https://via.placeholder.com/267x267" alt="Сливочное с шоколадной стружкой">
@@ -165,7 +108,7 @@
           <h3>
             <a href="#">Сливочное с шоколадной стружкой</a>
           </h3>
-          <button type="button" name="button">Быстрый просмотр</button>
+          <button>Быстрый просмотр</button>
         </li>
         <li>
           <img src="https://via.placeholder.com/267x267" alt="Сливочно-ванильное с кусочками шоколада">
@@ -173,7 +116,7 @@
           <h3>
             <a href="#">Сливочно-ванильное с кусочками шоколада</a>
           </h3>
-          <button type="button" name="button">Быстрый просмотр</button>
+          <button>Быстрый просмотр</button>
         </li>
         <li>
           <img src="https://via.placeholder.com/267x267" alt="Сливочное с ментоловым сиропом">
@@ -181,7 +124,7 @@
           <h3>
             <a href="#">Сливочное с ментоловым сиропом</a>
           </h3>
-          <button type="button" name="button">Быстрый просмотр</button>
+          <button>Быстрый просмотр</button>
         </li>
         <li>
           <img src="https://via.placeholder.com/267x267" alt="Сливочное с кусочками черного шоколада">
@@ -189,7 +132,7 @@
           <h3>
             <a href="#">Сливочное с кусочками черного шоколада</a>
           </h3>
-          <button type="button" name="button">Быстрый просмотр</button>
+          <button>Быстрый просмотр</button>
         </li>
         <li>
           <img src="https://via.placeholder.com/267x267" alt="Сливочное с мятным сиропом">
@@ -197,18 +140,20 @@
           <h3>
             <a href="#">Сливочное с мятным сиропом</a>
           </h3>
-          <button type="button" name="button">Быстрый просмотр</button>
+          <button>Быстрый просмотр</button>
         </li>
       </ul>
       <ul>
+        <li><a>Предыдущая страница</a></li>
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
         <li><a href="#">5</a></li>
+        <li><a href="#">Следующая страница</a></li>
       </ul>
     </main>
-    <footer class="page-footer main-footer">
+    <footer class="main-footer">
       <section class="footer-social">
         <h2>Социальные сети</h2>
         <ul>
