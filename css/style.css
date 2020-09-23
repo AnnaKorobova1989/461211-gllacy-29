@@ -360,6 +360,64 @@ img {
   line-height: 20px;
   font-weight: normal;
 }
+/*Catalog*/
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+}
+
+.crumb > a {
+  color: var(--basic-font-color);
+}
+
+.creamy-ice-cream {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: var(--basic-font-color);
+}
+
+.catalog-ice-cream {
+  list-style: none;
+}
+
+.ice-crem-price {
+  color: var(--basic-font-color);
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.name-ice-cream-item > a {
+  color: var(--basic-font-color);
+  font-weight: normal;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination-item > a{
+  color: var(--basic-font-color);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.pagination-item > a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item > a:active {
+  color: var(--black-color);
+  background: var(--basic-font-color);
+}
+
+.pagination-item-active > a{
+  color: var(--black-color);
+  background: var(--basic-font-color);
+}
+
 
 /*Main-Footer*/
 
