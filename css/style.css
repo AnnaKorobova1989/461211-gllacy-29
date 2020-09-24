@@ -268,7 +268,7 @@ img {
   line-height: 45px;
 }
 
-.goods-item-description > a {
+.goods-item-name > a {
   color: var(--basic-font-color);
   font-size: 16px;
   font-weight: 500;
