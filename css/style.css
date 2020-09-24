@@ -185,28 +185,15 @@ img {
   box-shadow: inset 0px 2px 2px #942718;
 }
 
-.ice-cream1 {
-  width: 683px;
-  height: 584px;
-  background-image: url("../img/ice-cream.png"), url("../img/ice-cream2.png");
-  background-position: left, right;
-  background-repeat: no-repeat;
+.main-headline {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
 }
 
-.ice-cream2 {
+.ice-cream {
   width: 683px;
   height: 584px;
-  background-image: url("../img/choco-ice-cream.png"), url("../img/lime-ice-cream.png");
-  background-position: left, right;
-  background-repeat: no-repeat;
-}
-
-.ice-cream3 {
-  width: 683px;
-  height: 584px;
-  background-image: url("../img/ice-cream3.png"), url("../img/ice-cream4.png");
-  background-position: left, right;
-  background-repeat: no-repeat;
 }
 
 .raspberry-free {
@@ -271,13 +258,25 @@ img {
   line-height: 22px;
 }
 
+.goods {
+  list-style: none;
+}
+
 .goods-item-price {
   font-size: 45px;
   font-weight: bold;
   line-height: 45px;
 }
 
+.goods-item-description > a {
+  color: var(--basic-font-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
 .features {
+  background-image: url(../img/wafer.jpg);
   background-color: var(--features-color);
   border-radius: 16px;
 }
@@ -297,6 +296,8 @@ img {
 }
 
 .news {
+  background-image: url(../img/strawberry-background.jpg);
+  background-repeat: no-repeat;
   background-color: var(--basic-font-color);
   border-radius: 16px;
 }
@@ -418,7 +419,6 @@ img {
   background: var(--basic-font-color);
 }
 
-
 /*Main-Footer*/
 
 .footer-social a {
@@ -441,7 +441,7 @@ img {
   font-weight: normal;
 }
 
-.footer-copyright p {
+.footer-copyright {
   color: var(--basic-font-color);
   font-size: 12px;
   line-height: 18px;
