@@ -199,7 +199,6 @@ img {
 .raspberry-free {
   width: 560px;
   height: 229px;
-  background-image: url("../img/raspberry.jpg");
   background-color: var(--raspberry-free);
   border-radius: 16px;
 }
@@ -241,7 +240,6 @@ img {
 .chocolate-free {
   width: 560px;
   height: 229px;
-  background-image: url(../img/choco.jpg);
   background-color: var(--chocolate-free);
   border-radius: 16px;
 }
@@ -276,7 +274,6 @@ img {
 }
 
 .features {
-  background-image: url(../img/wafer.jpg);
   background-color: var(--features-color);
   border-radius: 16px;
 }
@@ -296,7 +293,6 @@ img {
 }
 
 .news {
-  background-image: url(../img/strawberry-background.jpg);
   background-repeat: no-repeat;
   background-color: var(--basic-font-color);
   border-radius: 16px;
@@ -381,18 +377,6 @@ img {
 
 .catalog-ice-cream {
   list-style: none;
-}
-
-.ice-crem-price {
-  color: var(--basic-font-color);
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 45px;
-}
-
-.name-ice-cream-item > a {
-  color: var(--basic-font-color);
-  font-weight: normal;
 }
 
 .pagination {
