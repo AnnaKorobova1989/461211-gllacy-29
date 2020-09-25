@@ -200,6 +200,7 @@ img {
   width: 560px;
   height: 229px;
   background-color: var(--raspberry-free);
+  background-image: url(../img/raspberry.jpg);
   border-radius: 16px;
 }
 
@@ -241,6 +242,7 @@ img {
   width: 560px;
   height: 229px;
   background-color: var(--chocolate-free);
+  background-image: url(../img/choco.jpg);
   border-radius: 16px;
 }
 
@@ -275,6 +277,7 @@ img {
 
 .features {
   background-color: var(--features-color);
+  background-image: url(../img/wafer.jpg);
   border-radius: 16px;
 }
 
@@ -293,8 +296,11 @@ img {
 }
 
 .news {
-  background-repeat: no-repeat;
+  width: 560px;
+  height: 220px;
   background-color: var(--basic-font-color);
+  background-image: url(../img/strawberry-background.jpg);
+  background-repeat: no-repeat;
   border-radius: 16px;
 }
 
