@@ -38,12 +38,24 @@
   --contacts-background-color: #FEFEFE;
 }
 
+/*Grid*/
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 /*Global*/
 
 body {
   min-width: 1200px;
   margin: 0;
-  padding: 9px 27px;
   font-family: 'Roboto', Arial, sans-serif;
   background-color: var(--body-background-color1);
   font-size: 16px;
@@ -62,12 +74,40 @@ img {
 }
 
 /*Header*/
+.main-header {
+  display: grid;
+  margin-bottom: 40px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
 
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 154px 1fr min-content;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 27px 9px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.main-header-logo {
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
 .main-navigation {
+  display: grid;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-font-color);
   background-color: transparent;
+}
+
+.main-menu {
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .main-menu,
@@ -126,6 +166,11 @@ img {
   background-color: var(--active-pink-color);
 }
 
+.main-header-buttons {
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
 .main-header-buttons a {
   color: var(--basic-font-color);
   font-size: 14px;
@@ -144,6 +189,16 @@ img {
   font-weight: 16px;
 }
 
+.header-contacts-wrapper {
+  display: grid;
+  width: 1200px;
+  margin: 0 auto;
+}
+.header-contacts {
+  justify-self: end;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+}
 .header-phone {
   color: var(--basic-font-color);
   font-weight: bold;
@@ -410,7 +465,10 @@ img {
 }
 
 /*Main-Footer*/
-
+.main-footer {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
 .footer-social a {
   background: rgba(255, 255, 255, 0.8);
   color: #849D8F;
