@@ -76,25 +76,14 @@ img {
 /*Header*/
 .main-header {
   display: grid;
-  margin-bottom: 40px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .main-navigation-wrapper {
   display: grid;
   grid-template-columns: 154px 1fr min-content;
-  width: 1200px;
-  margin: 0 auto;
   padding: 27px 9px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
 }
 
-.main-header-logo {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-}
 .main-navigation {
   display: grid;
   font-size: 16px;
@@ -106,8 +95,6 @@ img {
 .main-menu {
   margin: 0;
   padding: 0;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .main-menu,
@@ -166,11 +153,6 @@ img {
   background-color: var(--active-pink-color);
 }
 
-.main-header-buttons {
-  outline: 5px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -5px;
-}
-
 .main-header-buttons a {
   color: var(--basic-font-color);
   font-size: 14px;
@@ -196,8 +178,6 @@ img {
 }
 .header-contacts {
   justify-self: end;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 }
 .header-phone {
   color: var(--basic-font-color);
@@ -206,8 +186,18 @@ img {
   line-height: 24px;
 }
 
+/*Container*/
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /*Main*/
 
+.best-offer {
+  display: grid;
+  justify-items: center;
+}
 .best-offer h2 {
   color: var(--basic-font-color);
   font-weight: bold;
@@ -247,13 +237,22 @@ img {
 }
 
 .ice-cream {
-  width: 683px;
-  height: 584px;
+  display: grid;
+  justify-items: center;
+}
+
+.product-free-container {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;
+  margin-bottom: 40px;
 }
 
 .raspberry-free {
   width: 560px;
   height: 229px;
+  margin-left: 27px;
   background-color: var(--raspberry-free);
   background-image: url(../img/raspberry.jpg);
   border-radius: 16px;
@@ -296,6 +295,8 @@ img {
 .chocolate-free {
   width: 560px;
   height: 229px;
+  margin: 0;
+  padding: 0;
   background-color: var(--chocolate-free);
   background-image: url(../img/choco.jpg);
   border-radius: 16px;
@@ -314,6 +315,11 @@ img {
 }
 
 .goods {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 26px;
+  margin-bottom: 40px;
+  padding-left: 27px;
   list-style: none;
 }
 
@@ -330,10 +336,17 @@ img {
   line-height: 22px;
 }
 
+.features-wrapper {
+  display: grid;
+  justify-items: center;
+}
+
 .features {
+  width: 1146px;
   background-color: var(--features-color);
   background-image: url(../img/wafer.jpg);
   border-radius: 16px;
+  margin-bottom: 40px;
 }
 
 .features h2 {
@@ -348,6 +361,14 @@ img {
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
+}
+
+.news-mailing-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;
+  padding-left: 27px;
+  margin-bottom: 40px;
 }
 
 .news {
@@ -374,6 +395,8 @@ img {
 }
 
 .mailing {
+  width: 560px;
+  height: 220px;
   background-color: var(--mailing-background);
   color: var(--mailing-text-color);
   font-size: 16px;
@@ -383,6 +406,12 @@ img {
 }
 
 .contacts {
+  position: absolute;
+  right: 50%;
+  top: 62px;
+  margin-right: -573px;
+  width: 303px;
+  height: 306px;
   color: var(--black-color);
   background-color: var(--contacts-background-color);
   border-radius: 16px;
@@ -418,6 +447,24 @@ img {
   line-height: 20px;
   font-weight: normal;
 }
+
+.map {
+  height: 430px;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.map-position {
+  position: relative;
+}
+
+.map-position {
+  height: 430px;
+  padding: 0;
+  margin: 0;
+}
+
 /*Catalog*/
 .breadcrumbs {
   font-size: 14px;
@@ -466,9 +513,14 @@ img {
 
 /*Main-Footer*/
 .main-footer {
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
+
+.footer-social {
+  align-self: center;
+}
+
 .footer-social a {
   background: rgba(255, 255, 255, 0.8);
   color: #849D8F;
@@ -482,6 +534,10 @@ img {
   background-color: var(--basic-font-color);
 }
 
+.footer-info {
+  justify-self: center;
+}
+
 .footer-info a{
   color: var(--basic-font-color);
   font-size: 13px;
@@ -490,6 +546,11 @@ img {
 }
 
 .footer-copyright {
+  justify-self: end;
+  align-self: center;
+}
+
+.footer-copyright-link {
   color: var(--basic-font-color);
   font-size: 12px;
   line-height: 18px;
