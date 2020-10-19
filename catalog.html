@@ -7,20 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <div>
-      <header class="main-header container">
-        <nav class="main-navigation">
-          <div class="main-navigation-wrapper">
-            <img src="img/logo.svg" width="154" height="64"  alt="Логотип магазина мороженого «Gllacy Shop»">
-            <ul class="main-menu">
-              <li><a class="main-menu-press" href="#">Каталог</a>
-                <ul class="sub-menu">
-                  <li><a href="#">Новинки</a></li>
-                  <li><a href="#">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
-                </ul>
+    <header class="main-header container">
+      <nav class="main-navigation">
+        <div class="main-navigation-wrapper">
+          <img src="img/logo.svg" width="154" height="64"  alt="Логотип магазина мороженого «Gllacy Shop»">
+          <ul class="main-menu">
+            <li><a class="main-menu-press" href="#">Каталог</a>
+              <ul class="sub-menu">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
               </li>
               <li><a href="#">Доставка и оплата</a></li>
               <li><a href="#">О компании</a></li>
@@ -40,22 +39,22 @@
             </div>
           </div>
         </nav>
-          <div class="header-contacts-wrapper">
-            <div class="page-catalog-header">
-              <ul class="breadcrumbs">
-                <li class="crumb"><a href="#">Главная</a></li>
-                <li class="crumb"><a href="#">Каталог</a></li>
-                <li class="breadcrumbs-current"><a>Сливочное</a></li>
-              </ul>
-              <h1 class="main-headline">Сливочное мороженое</h1>
-            </div>
-            <div class="header-contacts">
-              <p class="header-item">c 10 до 20, ежедневно</p>
-              <a class="header-phone" href="tel:8124502525"> 8 812 450-25-25 </a>
-            </div>
+        <div class="header-contacts-wrapper">
+          <div class="header-contacts">
+            <p class="header-item">c 10 до 20, ежедневно</p>
+            <a class="header-phone" href="tel:8124502525"> 8 812 450-25-25 </a>
           </div>
+        </div>
       </header>
     <main class="container">
+      <div class="page-catalog-header">
+        <ul class="breadcrumbs">
+          <li class="crumb"><a href="#">Главная</a></li>
+          <li class="crumb"><a href="#">Каталог</a></li>
+          <li class="breadcrumbs-current"><a>Сливочное</a></li>
+        </ul>
+        <h1 class="main-headline">Сливочное мороженое</h1>
+      </div>
       <form class="form-container" action="https://echo.htmlacademy.ru/courses" method="get">
         <div class="sorting-ice">
           <fieldset class="filter-item">
@@ -318,13 +317,13 @@
         </li>
       </ul>
       <ul class="pagination">
-        <li class="pagination-arrow pagination-arrow-prev"><a></a></li>
+        <li class="pagination-arrow pagination-arrow-prev"><a><span class="visually-hidden">Предыдущая страница</span></a></li>
         <li class="pagination-item pagination-item-active"><a href="#">1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">4</a></li>
         <li class="pagination-item"><a href="#">5</a></li>
-        <li class="pagination-arrow pagination-arrow-next"><a href="#"></a></li>
+        <li class="pagination-arrow pagination-arrow-next"><a href="#"><span class="visually-hidden">Следующая страница</span></a></li>
       </ul>
     </main>
     <footer class="main-footer container">
