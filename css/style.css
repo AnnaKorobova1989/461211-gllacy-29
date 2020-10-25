@@ -1,20 +1,20 @@
 /*Fonts*/
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
-  src: local('Roboto'),
-  url('../fonts/robotobold.woff2') format(woff2),
-  url('../fonts/robotobold.woff') format(woff);
+  src: local("Roboto"),
+  url("../fonts/robotobold.woff2") format(woff2),
+  url("../fonts/robotobold.woff") format(woff);
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: local('Roboto'),
-  url('../fonts/robotomedium.woff2') format(woff2),
-  url('../fonts/robotomedium.woff') format(woff);
+  src: local("Roboto"),
+  url("../fonts/robotomedium.woff2") format(woff2),
+  url("../fonts/robotomedium.woff") format(woff);
 }
 
 /*Variables*/
@@ -58,7 +58,7 @@
 body {
   min-width: 1200px;
   margin: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   background-color: var(--body-background-color1);
   font-size: 16px;
   line-height: 22px;
@@ -153,6 +153,7 @@ img {
 
 .main-menu a:active {
   background-color: var(--main-menu-active-button);
+  box-shadow: inset 0px 2px 1px #696969;
 }
 
 .main-menu .sub-menu {
@@ -533,6 +534,7 @@ img {
   padding: 15px 22px;
   margin-bottom: 22px;
   margin-right: 22px;
+  text-decoration: none;
 }
 
 .button {
@@ -924,21 +926,6 @@ background-position: center 0px;
   z-index: 2;
 }
 
-/* .mailing-container::after {
-  content: "";
-  width: 512px;
-  height: 220px;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  border: 5px solid;
-  border-image: url("../img/border.png") 2 round round;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 0;
-} */
-
 .email {
   width: 360px;
   height: 44px;
@@ -953,6 +940,9 @@ background-position: center 0px;
   color: rgba(153, 153, 153, 1);
   font-size: 16px;
   line-height: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 
 .email placeholder {
@@ -1607,11 +1597,11 @@ background-position: center 0px;
   left: -20px;
   width: 15px;
   height: 15px;
-  background-image: url("../img/heart.png");
+  background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
 }
 
-.footer-info a{
+.footer-info a {
   color: var(--basic-font-color);
   font-size: 13px;
   line-height: 18px;
@@ -1619,17 +1609,13 @@ background-position: center 0px;
 }
 
 .footer-copyright {
-  justify-self: end;
+  justify-self: center;
   align-self: center;
   padding-top: 18px;
 }
 
-.footer-copyright a {
-  text-decoration: none;
-}
-
 .footer-copyright img {
-  margin-left: -30px;
+  margin-left: 45px;
 }
 
 .footer-copyright-link {
@@ -1639,6 +1625,7 @@ background-position: center 0px;
   line-height: 18px;
   font-weight: normal;
   margin: 0;
+  margin-left: 45px;
 }
 
 .htmlacademy-link {
@@ -1646,4 +1633,5 @@ background-position: center 0px;
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
+  text-decoration: underline solid rgba(255, 255, 255, 0.2);
 }
