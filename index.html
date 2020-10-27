@@ -46,15 +46,15 @@
                   </svg>Вход
                 </a>
                 <section class="modal modal-enter">
-                  <form action="https://echo.htmlacademy.ru/courses">
+                  <form action="https://echo.htmlacademy.ru/courses" method="post">
                     <input class="form-input modal-email-form" type="email" name="email" placeholder="email@example.com">
-                    <input class="form-input modal-password-form" type="password" name="password" id="password-field" value="gllacy">
+                    <input class="form-input modal-password-form" type="password" name="password">
                     <div class="links-wrapper">
-                      <p class="links">
+                      <div class="links">
                         <a class="login-form-forgot" href="#">Забыли пароль?</a>
                         <a class="login-form-sign-up" href="#">Новая регистрация</a>
-                      </p>
-                      <button class="button modal-button" type="button" name="button">Войти</button>
+                      </div>
+                      <button class="button modal-button" type="submit">Войти</button>
                     </div>
                   </form>
                 </section>
@@ -196,15 +196,14 @@
               </div>
                 <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
                   <input class="email" type="email" name="emeil" placeholder="email@example.com">
-                  <button class="button button-mailing">Отправить</button>
+                  <button class="button button-mailing" type="submit">Отправить</button>
                 </form>
             </section>
           </div>
         </div>
         <section class="map">
-          <div class="map-position">
             <div class="map-container">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603734872523!5m2!1sru!2sru" min-width="1200" height="430" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603734872523!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             <aside class="contacts">
               <div class="contacts-wrapper">
@@ -216,7 +215,6 @@
               </div>
               <button class="button contacts-button" type="button">Форма обратной связи</button>
             </aside>
-          </div>
         </section>
       </main>
       <footer class="main-footer container">
@@ -277,13 +275,13 @@
     </div>
     <section class="modal modal-feedback">
       <h2 class="feedback-header">Мы обязательно вам ответим!</h2>
-      <form action="">
-        <input class="feedback-input feedback-name" type="text" placeholder="Имя Фамилия">
-        <input class="feedback-input feedback-email" type="email" placeholder="email@example.com">
-        <textarea class="feedback-input feedback-area" name="name">В свободной форме</textarea>
-        <button class="modal-close" aria-label="Закрыть"></button>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <input class="feedback-input feedback-name" name="feedback-name" type="text" placeholder="Имя Фамилия">
+        <input class="feedback-input feedback-email" name="feedback-email" type="email" placeholder="email@example.com">
+        <textarea class="feedback-input feedback-area" name="message" placeholder="В свободной форме"></textarea>
+        <button class="modal-close" aria-label="Закрыть" type="button"></button>
         <div class="feedback-button-wrapper">
-          <button class="button feedback-button">Отправить</button>
+          <button class="button feedback-button" type="submit">Отправить</button>
         </div>
       </form>
     </section>
