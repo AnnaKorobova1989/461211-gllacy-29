@@ -688,6 +688,7 @@ background-position: center 0px;
 
 .goods-item:hover::after,
 .goods-item:focus::after {
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
   background-color: rgba(248, 247, 244, 0.2);
   z-index: 7;
 }
@@ -1053,24 +1054,15 @@ background-position: center 0px;
 }
 
 .map-container {
-  width: 1200px;
   height: 430px;
+  background: url("../img/map.jpg");
+  background-position: center;
 }
 
 .map-container iframe{
-  min-width: 1200px;
-  height: 430px;
   border: 0;
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-  background: url("../img/map.jpg");
-}
-
-.map-position img {
   height: 100%;
+  width: 100%;
 }
 
 /*Catalog*/
@@ -1760,7 +1752,7 @@ background-position: center 0px;
 }
 
 .modal-feedback {
-  display: block;
+  display: none;
   position: fixed;
   width: 477px;
   height: 440px;
@@ -1836,25 +1828,6 @@ background-position: center 0px;
   outline: none;
 }
 
-/* .modal-close::before,
-.modal-close::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: -3px;
-  width: 25px;
-  height: 2px;
-  background-color: rgba(35, 31, 32, 1);
-}
-
-.modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  transform: rotate(-45deg);
-} */
-
 .feedback-button {
   padding: 13px 23px;
   font-size: 18px;
@@ -1868,4 +1841,43 @@ background-position: center 0px;
 .feedback-button-wrapper {
   display: flex;
   justify-content: flex-end;
+}
+
+.modal-cart {
+  top: 0;
+  left: 0;
+  position: absolute;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 35px;
+  width: 540px;
+}
+
+.modal-cart-position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 485px;
+}
+
+.delete-position {
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/delete-position.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.header-position {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
+  color: rgba(50, 50, 50, 1);
 }
