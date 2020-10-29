@@ -61,32 +61,34 @@
                 <a class="header-button cart-catalog" href="#">2 товара</a>
                 <section class="modal modal-cart">
                   <h2 class="visually-hidden">Корзина</h2>
-                    <div class="сart-table">
-                      <div class="cart-item">
-                        <button class="delete-cart-item" type="button">Удалить</button>
-                        <a href="catalog-item.html">
-                          <img class="cart-item-img" src="img/cart-ice1.jpg" width="32" height="32" alt="Пломбир с апельсиновым джемом">
-                          <span class="cart-item-title">Пломбир с апельсиновым джемом</span>
-                        </a>
-                        <span class="cart-item-cost">1,5 кг x <b>200 руб</b></span>
-                        <span class="cart-item-price">300 руб</span>
-                      </div>
-                      <div class="cart-item cart-last-item">
-                        <button class="delete-cart-item" type="button">Удалить</button>
-                        <a href="catalog-item">
-                          <img class="cart-item-img" src="img/cart-ice2.jpg" width="32" height="32" alt="Клубничный пломбир с присыпкой  из белого шоколада">
-                          <span class="cart-item-title">Клубничный пломбир с присыпкой  из белого шоколада</span>
-                        </a>
-                        <span class="cart-item-cost">1,5 кг x <b>300 руб</b></span>
-                        <span class="cart-item-price">450 руб</span>
+                    <form action="https://echo.htmlacademy.ru/courses" method="post">
+                      <div class="сart-table">
+                        <div class="cart-item">
+                          <button class="delete-cart-item" type="button"><span class="visually-hidden">Удалить</span></button>
+                          <a href="#">
+                            <img class="cart-item-img" src="img/cart-ice1.jpg" width="32" height="32" alt="Пломбир с апельсиновым джемом">
+                            <span class="cart-item-title">Пломбир с апельсиновым джемом</span>
+                          </a>
+                          <span class="cart-item-cost">1,5 кг x <b>200 руб</b></span>
+                          <span class="cart-item-price">300 руб</span>
+                        </div>
+                        <div class="cart-item">
+                          <button class="delete-cart-item" type="button"><span class="visually-hidden">Удалить</span></button>
+                          <a href="#">
+                            <img class="cart-item-img" src="img/cart-ice2.jpg" width="32" height="32" alt="Клубничный пломбир с присыпкой  из белого шоколада">
+                            <span class="cart-item-title">Клубничный пломбир с присыпкой  из белого шоколада</span>
+                          </a>
+                          <span class="cart-item-cost">1,5 кг x <b>300 руб</b></span>
+                          <span class="cart-item-price">450 руб</span>
+                        </div>
                       </div>
                       <div class="cart-item cart-cost">
                           <span>Итого: 750 руб.</span>
                       </div>
-                    </ul>
-                    <div class="cart-button-wrapper">
-                      <a class="button cart-order-button" href="#">Оформить заказ</a>
-                    </div>
+                      <div class="cart-button-wrapper">
+                        <button class="button cart-order-button" type="submit">Оформить заказ</button>
+                      </div>
+                    </form>
                 </section>
               </div>
             </div>
