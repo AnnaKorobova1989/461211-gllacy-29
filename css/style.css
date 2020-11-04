@@ -642,20 +642,27 @@ img {
 
 .site-wrapper {
   min-width: 940px;
-  background-image: url("../img/pair-icecream01.png");
-  background-repeat: no-repeat;
-  background-position: center 0px;
+
 }
 
 .slide1 {
+  background-image: url("../img/pair-icecream01.png");
+  background-repeat: no-repeat;
+  background-position: center 0px;
   background-color: #849D8f;
 }
 
 .slide2 {
+  background-image: url("../img/pair-icecream02.png");
+  background-repeat: no-repeat;
+  background-position: center 0px;
   background-color: #8996A6;
 }
 
 .slide3 {
+  background-image: url("../img/pair-icecream03.png");
+  background-repeat: no-repeat;
+  background-position: center 0px;
   background-color: #9D8B84;
 }
 
@@ -1003,6 +1010,7 @@ img {
   color: rgba(153, 153, 153, 1);
   font-size: 16px;
   line-height: 24px;
+  font-weight: 500;
 }
 
 .mailing-form {
@@ -1640,7 +1648,7 @@ img {
   margin-left: 30px;
 }
 
-.production {
+.footer-info-links li:nth-child(2n+1) {
   margin-left: 30px;
 }
 
@@ -1709,7 +1717,7 @@ img {
 
 .modal-search-form {
   width: 305px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: inherit;
 }
 
 .search-wrapper:hover .modal-search {
@@ -1737,8 +1745,7 @@ img {
 
 .form-input::placeholder {
   color: rgba(153, 153, 153, 1);
-  font-family: "Roboto", Arial, sans-serif;
-  font-weight: 100;
+  font-weight: 500;
 }
 
 .form-input:focus {
