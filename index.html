@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <div class="site-wrapper">
+    <div class="site-wrapper slide1">
       <header class="main-header container">
         <nav class="main-navigation">
           <div class="main-navigation-wrapper">
-            <img src="img/logo.svg" width="154" height="64"  alt="Логотип магазина мороженого «Gllacy Shop»">
+            <a><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого «Gllacy Shop»"></a>
             <ul class="main-menu">
               <li><a class="main-menu-link" href="catalog.html">Каталог</a>
                 <ul class="sub-menu">
@@ -33,7 +33,8 @@
                 </svg>
                 </a>
                 <section class="modal modal-search">
-                  <form action="https://echo.htmlacademy.ru/courses" method="get">
+                  <h3 class="visually-hidden">Поиск по сайту</h3>
+                  <form action="https://echo.htmlacademy.ru/" method="get">
                     <label class="visually-hidden" for="search-form">Поиcк</label>
                     <input class="form-input modal-search-form" type="text" name="search" placeholder="Крем-брюле" id="search-form">
                   </form>
@@ -47,7 +48,8 @@
                   </svg>Вход
                 </a>
                 <section class="modal modal-enter">
-                  <form action="https://echo.htmlacademy.ru/courses" method="post">
+                  <h3 class="visually-hidden">Форма входа</h3>
+                  <form action="https://echo.htmlacademy.ru/" method="post">
                     <label class="visually-hidden" for="email-form">Логин</label>
                     <input class="form-input modal-email-form" type="email" name="email" placeholder="email@example.com" id="email-form">
                     <label class="visually-hidden" for="password-form">Пароль</label>
@@ -66,12 +68,12 @@
             </div>
           </div>
         </nav>
-          <div class="header-contacts-wrapper">
-            <div class="header-contacts">
-              <p class="header-item">c 10 до 20, ежедневно</p>
-              <a class="header-phone" href="tel:8124502525"> 8 812 450-25-25 </a>
-            </div>
+        <div class="header-contacts-wrapper">
+          <div class="header-contacts">
+            <p class="header-item">c 10 до 20, ежедневно</p>
+            <a class="header-phone" href="tel:8124502525"> 8 812 450-25-25 </a>
           </div>
+        </div>
       </header>
       <main>
         <div class="container">
@@ -99,13 +101,13 @@
           </div>
           <div class="product-free-container">
             <article class="raspberry-free">
-                <h3>Малинка даром!</h3>
-                <p>При покупке любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                <a class="button product-free-button" href="#">Хочу варенье!</a>
+              <h3>Малинка даром!</h3>
+              <p>При покупке любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <a class="button product-free-button" href="#">Хочу варенье!</a>
             </article>
             <article class="chocolate-free">
-                <h3>Шоколадки даром!</h3>
-                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+              <h3>Шоколадки даром!</h3>
+              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
               <a class="button product-free-button" href="#">Хочу шоколадки!</a>
             </article>
           </div>
@@ -178,10 +180,10 @@
             <section class="features">
               <h2>Магазин Глэйси - это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
               <ul class="features-list">
-                <li class="feature-item-ice feature-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-                <li class="feature-item-leaf feature-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-                <li class="feature-item-cow feature-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-                <li class="feature-item-temp feature-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+                <li class="feature-item feature-item-ice">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+                <li class="feature-item feature-item-leaf">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+                <li class="feature-item feature-item-cow">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+                <li class="feature-item feature-item-temp">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
               </ul>
             </section>
           </div>
@@ -197,28 +199,29 @@
                 <h2 class="visually-hidden">Подписаться на рассылку</h2>
                 <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               </div>
-                <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
-                  <label class="visually-hidden" for="email">Ваш email</label>
-                  <input class="form-input email" type="email" name="emeil" placeholder="email@example.com" id="email">
-                  <button class="button button-mailing" type="submit">Отправить</button>
-                </form>
+              <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="get">
+                <label class="visually-hidden" for="email">Ваш email</label>
+                <input class="form-input email" type="email" name="emeil" placeholder="email@example.com" id="email">
+                <button class="button button-mailing" type="submit">Отправить</button>
+              </form>
             </section>
           </div>
         </div>
         <section class="map">
-            <div class="map-container">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603734872523!5m2!1sru!2sru" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <h3 class="visually-hidden">Карта</h3>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603734872523!5m2!1sru!2sru" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <aside class="contacts">
+            <div class="contacts-wrapper">
+              <p class="address-name">Адрес главного офиса<br> и офлайн-магазина:</p>
+              <p class="address"><b>ул. Большая Конюшенная,</br> 19/8, Санкт-Петербург</b></p>
+              <p class="tel-name">Для заказов по телефону:</p>
+              <a class="contacts-phone" href="tel:8124502525"> 8 812 450-25-25 </a>
+              <p class="opening-hours">(c 10 до 20 ежедневно)</p>
             </div>
-            <aside class="contacts">
-              <div class="contacts-wrapper">
-                <p class="address-name">Адрес главного офиса<br> и офлайн-магазина:</p>
-                <p class="address"><b>ул. Большая Конюшенная, 19/8, Санкт-Петербург</b></p>
-                <p class="tel-name">Для заказов по телефону:</p>
-                <a class="contacts-phone" href="tel:8124502525"> 8 812 450-25-25 </a>
-                <p class="opening-hours">(c 10 до 20 ежедневно)</p>
-              </div>
-              <button class="button contacts-button" type="button">Форма обратной связи</button>
-            </aside>
+            <button class="button contacts-button" type="button">Форма обратной связи</button>
+          </aside>
         </section>
       </main>
       <footer class="main-footer container">
@@ -267,19 +270,22 @@
           <ul class="footer-info-links">
             <li class="link-heart"><a href="#">Для поставщиков</a></li>
             <li><a href="#">Наши документы</a></li>
-            <li><a href="#">О производстве</a></li>
+            <li><a class="production" href="#">О производстве</a></li>
             <li><a href="#">Экологические стандарты</a></li>
           </ul>
         </section>
         <section class="footer-copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlacademy.svg" width="108" height="39" alt="HTML Academy"></a>
+          <h3 class="visually-hidden">Сделано в HTML Academy</h3>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo_htmlacademy.svg" width="108" height="39" alt="HTML Academy">
+          </a>
           <p class="footer-copyright-link">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy </a> © 2019</p>
         </section>
       </footer>
     </div>
     <section class="modal modal-feedback">
       <h2 class="feedback-header">Мы обязательно вам ответим!</h2>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <form action="https://echo.htmlacademy.ru/" method="post">
         <input class="form-input feedback-input feedback-name" name="feedback-name" type="text" placeholder="Имя Фамилия">
         <input class="form-input feedback-input feedback-email" name="feedback-email" type="email" placeholder="email@example.com">
         <textarea class="form-input feedback-input feedback-area" name="message" placeholder="В свободной форме"></textarea>
