@@ -382,7 +382,6 @@ img {
   background-color: var(--basic-font-color);
 }
 
-
 .catalog-header-buttons a:hover,
 .catalog-header-buttons a:focus {
   color: var(--black-color);
@@ -503,7 +502,7 @@ img {
 
 .best-offer-button {
   display: inline-block;
-  padding: 12px 32px;
+  padding: 10px 25px;
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -518,8 +517,9 @@ img {
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
   cursor: pointer;
-  margin-left: -22px;
-  margin-top: 5px;
+  margin-left: -18px;
+  margin-top: 10px;
+  letter-spacing: 2px;
 }
 
 .best-offer-button:hover {
@@ -642,7 +642,6 @@ img {
 
 .site-wrapper {
   min-width: 940px;
-
 }
 
 .slide1 {
@@ -839,7 +838,7 @@ img {
   display: grid;
   justify-items: center;
   height: 306px;
-  margin-top: -80px;
+  margin-top: -75px;
   margin-bottom: 40px;
 }
 
@@ -868,9 +867,12 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-column-gap: 27px;
-  grid-row-gap: 7px;
+  grid-column-gap: 30px;
+  grid-row-gap: 5px;
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 40px;
 }
 
 .feature-item {
@@ -893,11 +895,11 @@ img {
 }
 
 .feature-item-leaf::before {
-  background-image: url("../img/leaf.png");
+  background-image: url("../img/cow.png");
 }
 
 .feature-item-cow::before {
-  background-image: url("../img/cow.png");
+  background-image: url("../img/leaf.png");
 }
 
 .feature-item-temp::before {
@@ -1060,7 +1062,7 @@ img {
   font-weight: bold;
   padding: 0;
   margin: 0;
-  margin-top: -15px;
+  margin-top: -17px;
 }
 
 .tel-name {
@@ -1091,10 +1093,12 @@ img {
 
 .contacts-button {
   width: 253px;
-  padding: 12px 12px;
+  padding: 10px 12px;
   align-items: center;
   margin-left: 25px;
   margin-top: 12px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .map {
@@ -1443,8 +1447,8 @@ img {
 .check-input + label::before {
   content: "";
   position: absolute;
-  left: -30px;
-  top: 0;
+  left: -28px;
+  top: 2px;
   width: 24px;
   height: 24px;
   background-image: url("../img/checkbox-off.svg");
