@@ -1,37 +1,17 @@
 const siteWrapper = document.querySelector(".site-wrapper");
-const sliderControl1 = document.querySelector(".slider-control-1");
-const sliderControl2 = document.querySelector(".slider-control-2");
-const sliderControl3 = document.querySelector(".slider-control-3");
+const sliderControls = document.querySelectorAll(".slider-control");
 
-sliderControl1.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  sliderControl2.classList.remove("current");
-  sliderControl3.classList.remove("current");
-  sliderControl1.classList.add("current");
-  siteWrapper.classList.remove("slide2");
-  siteWrapper.classList.remove("slide3");
-  siteWrapper.classList.add("slide1");
-});
 
-sliderControl2.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  sliderControl1.classList.remove("current");
-  sliderControl3.classList.remove("current");
-  sliderControl2.classList.add("current");
-  siteWrapper.classList.remove("slide1");
-  siteWrapper.classList.remove("slide3");
-  siteWrapper.classList.add("slide2");
-});
-
-sliderControl3.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  sliderControl1.classList.remove("current");
-  sliderControl2.classList.remove("current");
-  sliderControl3.classList.add("current");
-  siteWrapper.classList.remove("slide1");
-  siteWrapper.classList.remove("slide2");
-  siteWrapper.classList.add("slide3");
-});
+  for (let i = 0; i < sliderControls.length; i++) {
+    sliderControls[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+        siteWrapper.classList = "site-wrapper";
+        siteWrapper.classList.add(`slide${i+1}`);
+        const currentControl = document.querySelector(".current");
+        currentControl.classList.remove("current");
+        sliderControls[i].classList.add("current");
+    });
+  };
 
 const contactsButton = document.querySelector(".contacts-button");
 const popup = document.querySelector(".modal-feedback");
