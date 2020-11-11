@@ -5,11 +5,11 @@ const sliderControls = document.querySelectorAll(".slider-control");
   for (let i = 0; i < sliderControls.length; i++) {
     sliderControls[i].addEventListener("click", function (evt) {
       evt.preventDefault();
-        siteWrapper.classList = "site-wrapper";
-        siteWrapper.classList.add(`slide${i+1}`);
-        const currentControl = document.querySelector(".current");
-        currentControl.classList.remove("current");
-        sliderControls[i].classList.add("current");
+      siteWrapper.classList = "site-wrapper";
+      siteWrapper.classList.add(`slide${i+1}`);
+      const currentControl = document.querySelector(".current");
+      currentControl.classList.remove("current");
+      sliderControls[i].classList.add("current");
     });
   };
 

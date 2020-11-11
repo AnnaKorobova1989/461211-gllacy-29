@@ -27,6 +27,7 @@
   --basic-font-color: #FFFFFF;
   --main-menu-active-button: #EDEDED;
   --main-menu-shadow-color: #696969;
+  --total-black-color: #000000;
   --black-color: #323232;
   --hover-pink-color: #FBDED7;
   --active-pink-color: #F6B5A5;
@@ -39,6 +40,37 @@
   --mailing-background: #F8F7F4;
   --mailing-text-color: #5A5A5A;
   --contacts-background-color: #FEFEFE;
+  --transparent-color: transparent;
+  --active-link-color: #D07058;
+  --header-phone-color: rgba(255, 188, 158, 1);
+  --goods-item: rgba(248, 247, 244, 0.2);
+  --email-color: rgba(153, 153, 153, 1);
+  --filter-color: rgba(255, 255, 255, 0.2);
+  --filter-form-color: rgba(255, 255, 255, 1);
+  --filter-fotm-hover: rgba(255, 255, 255, 0.8);
+  --modal-color: rgba(0, 0, 0, 0.4);
+  --modal-background-color: #f8f7f4;
+  --login-form-color: rgba(50, 50, 50, 1);
+  --login-form-underline: rgba(50, 50, 50, 0.3);
+  --form-input-color: rgba(211, 211, 210, 1);
+  --sub-menu-color: rgba(50, 50, 50, 0.2);
+  --button-shadow-color: rgba(160, 32, 11, 0.76);
+  --button-box-shadow: rgba(172, 16, 0, 0.64);
+  --best-offer-color: rgba(0, 0, 0, 0.07);
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
+  --email-border-color: rgba(178, 178, 178, 0.52);
+  --range-bar: rgba(248, 247, 244, 1);
+  --range-scale: rgba(248, 247, 244, 0.5);
+  --social-button-color: rgba(255, 255, 255, 0.5);
+  --social-button-hover: rgba(255, 255, 255, 0.7);
+  --form-input-focus: rgba(46, 136, 228, 0.52);
+  --range-controls: #ababab;
+  --cart-item-color: #cacac7;
+  --cart-item-cost-color: #999999;
+  --best-offer-button-background: #f26843;
+  --best-offer-button-background2: #e74a35;
+  --button-hover-color: #AC1000;
+  --button-active-color: #942718;
 }
 
 /*Grid*/
@@ -114,7 +146,7 @@ img {
 }
 
 .sub-menu {
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 20px var(--modal-color);
   border-radius: 4px;
 }
 
@@ -123,7 +155,7 @@ img {
 }
 
 .sub-menu li:first-child a {
-  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+  border-bottom: 1px solid var(--sub-menu-color);
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
@@ -143,13 +175,13 @@ img {
 }
 
 .main-menu-press {
-  background-color: rgba(208, 112, 88, 1);
+  background-color: var(--main-menu-press);
   border-radius: 26px;
   text-decoration: none;
 }
 
 .main-menu-link {
-  text-decoration: underline solid rgba(255, 255, 255, 0.2);
+  text-decoration: underline solid var(--filter-color);
 }
 
 .main-menu a:hover,
@@ -161,7 +193,7 @@ img {
 
 .main-menu a:active {
   background-color: var(--main-menu-active-button);
-  box-shadow: inset 0px 2px 1px #696969;
+  box-shadow: inset 0px 2px 1px var(--main-menu-shadow-color);
 }
 
 .main-menu .sub-menu {
@@ -202,13 +234,13 @@ img {
 }
 
 .active-link a {
-  background-color: #D07058;
-  color: #ffffff;
+  background-color: var(--active-link-color);
+  color: var(--basic-font-color);
 }
 
 .active-link a:hover {
-  background-color: #D07058;
-  color: #ffffff;
+  background-color: var(--active-link-color);
+  color: var(--basic-font-color);
 }
 
 .main-header-buttons {
@@ -259,7 +291,7 @@ img {
 }
 
 .header-button {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--filter-color);
   height: 32px;
   border-radius: 20px;
   color: var(--basic-font-color);
@@ -290,7 +322,7 @@ img {
 
 .search:hover path,
 .search:focus path {
-  fill: rgba(50, 50, 50, 1);
+  fill: var(--login-form-color);
 }
 
 .enter {
@@ -312,7 +344,7 @@ img {
 
 .enter:hover path,
 .enter:focus path {
-  fill: rgba(50, 50, 50, 1);
+  fill: var(--login-form-color);
 }
 
 .cart {
@@ -322,6 +354,7 @@ img {
   text-align: right;
   padding-top: 7px;
   padding-right: 18px;
+  margin-top: 3px;
 }
 
 .cart-catalog {
@@ -424,11 +457,11 @@ img {
 
 .header-phone:hover,
 .header-phone:focus {
-  color: rgba(255, 188, 158, 1);
+  color: var(--header-phone-color);
 }
 
 .header-phone:active {
-  color: rgba(255, 188, 158, 1);
+  color: var(--header-phone-color);
 }
 
 /*Container*/
@@ -459,7 +492,7 @@ img {
   position: relative;
   padding-top: 321px;
   text-align: center;
-  color: #ffffff;
+  color: var(--basic-font-color);
   height: 200px;
   margin-bottom: 50px;
 }
@@ -507,14 +540,14 @@ img {
   font-size: 31px;
   line-height: 41px;
   text-align: center;
-  color: #ffffff;
+  color: var(--basic-font-color);
   vertical-align: top;
   text-decoration: none;
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-  background: #f26843;
-  background: linear-gradient(to bottom, #f26843, #e74a35);
+  text-shadow: 0 2px 5px var(--button-shadow-color);
+  background: var(--best-offer-button-background);
+  background: linear-gradient(to bottom, var(--best-offer-button-background), var(--best-offer-button-background2));
   border-radius: 50px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  box-shadow: 0 2px 2px var(--button-box-shadow);
   border: none;
   cursor: pointer;
   margin-left: -18px;
@@ -523,13 +556,13 @@ img {
 }
 
 .best-offer-button:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-  box-shadow: 0px 2px 2px #AC1000;
+  background: linear-gradient(0deg, var(--filter-color), var(--filter-color)), linear-gradient(180deg, var(--best-offer-button-background) 0%, var(--best-offer-button-background2) 100%);
+  box-shadow: 0px 2px 2px var(--button-hover-color);
 }
 
 .best-offer-button:active {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-  box-shadow: inset 0px 2px 2px #942718;
+  background: linear-gradient(0deg, var(--best-offer-color), var(--best-offer-color)), linear-gradient(180deg, var(--best-offer-button-background) 0%, var(--best-offer-button-background2) 100%);
+  box-shadow: inset 0px 2px 2px var(--button-active-color);
 }
 
 .product-free-container {
@@ -584,26 +617,27 @@ img {
 
 .button {
   display: inline-block;
+  vertical-align: middle;
   color: var(--basic-font-color);
   font-weight: bold;
-  background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  background: linear-gradient(180deg, var(--best-offer-button-background) 0%, var(--best-offer-button-background2) 100%);
   border-radius: 70px;
   border: none;
   outline: none;
-  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  text-shadow: 0px 2px 5px var(--button-shadow-color);
+  box-shadow: 0px 2px 2px var(--button-box-shadow);
 }
 
 .button:hover,
 .button:focus {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-  box-shadow: 0px 2px 2px #AC1000;
+  background: linear-gradient(0deg, var(--filter-color), var(--filter-color)), linear-gradient(180deg, var(--best-offer-button-background) 0%, var(--best-offer-button-background2) 100%);
+  box-shadow: 0px 2px 2px var(--button-hover-color);
   color: var(--basic-font-color);
 }
 
 .button:active {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-  box-shadow: inset 0px 2px 2px #942718;
+  background: linear-gradient(0deg, var(--best-offer-color), var(--best-offer-color)), linear-gradient(180deg, var(--best-offer-button-background) 0%, var(--best-offer-button-background2) 100%);
+  box-shadow: inset 0px 2px 2px var(--button-active-color);
   border: none;
 }
 
@@ -619,15 +653,15 @@ img {
 }
 
 .slider-controls .current {
-  background-color: #ffffff;
+  background-color: var(--basic-font-color);
 }
 
 .slider-controls button {
   padding: 0;
   width: 21px;
   height: 21px;
-  background-color: transparent;
-  border: 2px solid #ffffff;
+  background-color: var(--transparent-color);
+  border: 2px solid var(--basic-font-color);
   border-radius: 50%;
   cursor: pointer;
   outline: none;
@@ -649,21 +683,21 @@ img {
   background-image: url("../img/pair-icecream01.png");
   background-repeat: no-repeat;
   background-position: center 0px;
-  background-color: #849D8f;
+  background-color: var(--body-background-color1);
 }
 
 .slide2 {
   background-image: url("../img/pair-icecream02.png");
   background-repeat: no-repeat;
   background-position: center 0px;
-  background-color: #8996A6;
+  background-color: var(--body-background-color2);
 }
 
 .slide3 {
   background-image: url("../img/pair-icecream03.png");
   background-repeat: no-repeat;
   background-position: center 0px;
-  background-color: #9D8B84;
+  background-color: var(--body-background-color3);
 }
 
 .chocolate-free {
@@ -745,8 +779,8 @@ img {
 .goods-item:hover::after,
 .goods-item:focus::after,
 .goods-item:focus-within::after {
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
-  background-color: rgba(248, 247, 244, 0.2);
+  box-shadow: 0px 20px 20px var(--box-shadow-color);
+  background-color: var(--goods-item);
   z-index: 7;
 }
 
@@ -811,10 +845,14 @@ img {
 
 .goods-item-name a {
   color: var(--basic-font-color);
-  text-decoration: underline solid rgba(255, 255, 255, 0.2);
+  text-decoration: underline solid var(--filter-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
+}
+
+.goods-item-name a:hover {
+  color: var(--header-phone-color);
 }
 
 .weight {
@@ -831,7 +869,7 @@ img {
   line-height: 24px;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
+  color: var(--basic-font-color);
   cursor: pointer;
 }
 
@@ -975,7 +1013,7 @@ img {
   line-height: 22px;
   font-weight: normal;
   border-radius: 16px;
-  border: solid 5px #000000;
+  border: solid 5px var(--total-black-color);
   border-image: url("../img/border.png") 2 round round;
 }
 
@@ -998,9 +1036,9 @@ img {
   appearance: none;
   box-shadow: none;
   outline: none;
-  border: 1px solid rgba(178, 178, 178, 0.52);
+  border: 1px solid var(--email-border-color);
   border-radius: 6px;
-  color: rgba(153, 153, 153, 1);
+  color: var(--email-color);
   font-size: 16px;
   line-height: 24px;
   padding-left: 15px;
@@ -1010,7 +1048,7 @@ img {
 }
 
 .email::placeholder {
-  color: rgba(153, 153, 153, 1);
+  color: var(--email-color);
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -1025,8 +1063,8 @@ img {
   width: 130px;
   height: 44px;
   outline: none;
-  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  text-shadow: 0px 2px 5px var(--button-shadow-color);
+  box-shadow: 0px 2px 2px var(--button-box-shadow);
 }
 
 .contacts {
@@ -1105,7 +1143,7 @@ img {
 .map {
   position: relative;
   height: 430px;
-  background-color: #ffffff;
+  background-color: var(--basic-font-color);
   padding: 0;
 }
 
@@ -1169,7 +1207,7 @@ img {
 }
 
 .crumb {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid var(--filter-color);
 }
 
 .crumb a {
@@ -1179,7 +1217,7 @@ img {
 
 .crumb a:hover,
 .crumb a:focus {
-  color: rgba(255, 188, 158, 1);
+  color: var(--header-phone-color);
 }
 
 .main-headline {
@@ -1232,7 +1270,7 @@ img {
   margin-top: 7px;
   width: 196px;
   height: 36px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--filter-color);
   border-radius: 20px;
 }
 
@@ -1254,11 +1292,11 @@ img {
 
 .select-ice:hover,
 .select-ice:focus {
-  color: black;
+  color: var(--black-color);
 }
 
 .select-ice:active {
-  color: black;
+  color: var(--black-color);
 }
 
 .filter-item {
@@ -1289,7 +1327,7 @@ img {
 .range-controls {
   position: relative;
   height: 19px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--filter-color);
   border-radius: 20px;
   margin-bottom: 14px;
   padding-top: 17px;
@@ -1303,8 +1341,8 @@ img {
   left: 0px;
   width: 4px;
   height: 4px;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-font-color);
+  background-color: var(--range-controls);
   border-radius: 50px;
 }
 
@@ -1319,16 +1357,16 @@ img {
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: rgba(248, 247, 244, 1);
+  background: var(--range-bar);
 }
 
 .range-controls .scale {
   height: 2px;
-  background: rgba(248, 247, 244, 0.5);
+  background: var(--range-scale);
 }
 
 .fat-filter-container {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--filter-color);
   border-radius: 20px;
   width: 410px;
   margin: 0;
@@ -1369,13 +1407,13 @@ img {
   top: 0;
   width: 16px;
   height: 16px;
-  border: 4px solid rgba(255, 255, 255, 0.8);
+  border: 4px solid var(--filter-fotm-hover);
   border-radius: 50%;
 }
 
 .radio-input:hover + label::before,
 .radio-input:focus + label::before {
-  border: 4px solid rgba(255, 255, 255, 1);
+  border: 4px solid var(--filter-form-color);
 }
 
 .radio-input:checked + label::after {
@@ -1385,18 +1423,18 @@ img {
   left: 1px;
   width: 8px;
   height: 8px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--filter-fotm-hover);
   border-radius: 50%;
 }
 
 .radio-input:checked:hover + label::after,
 .radio-input:checked:focus + label::after {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--filter-form-color);
 }
 
 .fillers-list-container {
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--filter-color);
   padding: 7px;
   border-radius: 20px;
   width: 700px;
@@ -1465,8 +1503,8 @@ img {
 .check-input:checked + label::after {
   content: "";
   position: absolute;
-  top: 0px;
-  left: -31px;
+  top: 2px;
+  left: -28px;
   width: 24px;
   height: 24px;
   background-image: url("../img/checkbox-on.svg");
@@ -1488,15 +1526,15 @@ img {
   margin-left: 0px;
   border-radius: 20px;
   color: var(--basic-font-color);
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(255, 255, 255, 1);
+  background-color: var(--filter-color);
+  border: 2px solid var(--filter-form-color);
   outline: none;
 }
 
 .form-button:hover,
 .form-button:focus {
   color: black;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--filter-form-color);
   cursor: pointer;
 }
 
@@ -1537,7 +1575,7 @@ img {
 }
 
 .pagination-item a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--filter-color);
 }
 
 .pagination-item a:active {
@@ -1574,7 +1612,7 @@ img {
 .main-footer {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid var(--filter-color);
   padding-bottom: 30px;
 }
 
@@ -1600,7 +1638,7 @@ img {
 }
 
 .social-button svg {
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid var(--social-button-color);
   border-radius: 50%;
 }
 
@@ -1610,7 +1648,7 @@ img {
 }
 
 .social-button:active svg {
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--social-button-hover);
 }
 
 .footer-social {
@@ -1641,7 +1679,11 @@ img {
 }
 
 .footer-info-links a {
-  text-decoration: underline solid rgba(255, 255, 255, 0.2);
+  text-decoration: underline solid var(--filter-color);
+}
+
+.footer-info-links a:hover {
+  color: var(--header-phone-color);
 }
 
 .footer-info-links:first-child {
@@ -1700,15 +1742,15 @@ img {
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
-  text-decoration: underline solid rgba(255, 255, 255, 0.2);
+  text-decoration: underline solid var(--filter-color);
 }
 
 /* Modal windows */
 .modal {
-  background-color: rgba(248, 247, 244, 1);
+  background-color: var(--modal-background-color);
   border-radius: 4px;
   box-sizing: border-box;
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 20px var(--modal-color);
 }
 
 .modal-search {
@@ -1736,9 +1778,9 @@ img {
   -ns-appearance: none;
   appearance: none;
   box-sizing: border-box;
-  border: 1px solid rgba(211, 211, 210, 1);
+  border: 1px solid var(--form-input-color);
   border-radius: 4px;
-  color: #323232;
+  color: var(--black-color);
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -1749,13 +1791,13 @@ img {
 }
 
 .form-input::placeholder {
-  color: rgba(153, 153, 153, 1);
+  color: var(--email-color);
   font-weight: 500;
 }
 
 .form-input:focus {
   outline: none;
-  border: 2px solid rgba(46, 136, 228, 0.52);
+  border: 1px solid var(--form-input-focus);
   border-radius: 4px;
 }
 
@@ -1814,8 +1856,8 @@ img {
   font-size: 13px;
   line-height: 15px;
   font-weight: normal;
-  color: rgba(50, 50, 50, 1);
-  text-decoration: underline solid rgba(50, 50, 50, 0.3);
+  color: var(--login-form-color);
+  text-decoration: underline solid var(--login-form-underline);
 }
 
 .modal-feedback {
@@ -1837,7 +1879,7 @@ img {
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
-  color: rgba(50, 50, 50, 1);
+  color: var(--login-form-color);
   margin: 0;
   padding-left: 24px;
   padding-top: 18px;
@@ -1848,12 +1890,12 @@ img {
   -moz-appearance: none;
   -ns-appearance: none;
   appearance: none;
-  border: solid 1px rgba(178, 178, 178, 0.52);
+  border: solid 1px var(--email-border-color);
   border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
-  color: rgba(153, 153, 153, 1);
+  color: var(--email-color);
   padding-left: 15px;
   padding-right: 15px;
   margin-left: 24px;
@@ -1886,7 +1928,7 @@ img {
   width: 22px;
   height: 22px;
   border: 0;
-  background: rgba(248, 247, 244, 1);
+  background: var(--range-bar);
   cursor: pointer;
   background-image: url("../img/close.svg");
   background-repeat: no-repeat;
@@ -1928,7 +1970,7 @@ img {
   min-height: 51px;
   font-size: 13px;
   line-height: 16px;
-  color: #323232;
+  color: var(--black-color);
   display: flex;
   align-items: center;
 }
@@ -1938,13 +1980,13 @@ img {
   line-height: 16px;
   display: flex;
   align-items: center;
-  color: #323232;
+  color: var(--black-color);
   text-decoration: none;
 }
 
 .cart-item:last-child {
   padding-bottom: 17px;
-  border-bottom: 1px solid #cacac7;
+  border-bottom: 1px solid var(--cart-item-color);
 }
 
 .delete-cart-item {
@@ -1980,7 +2022,7 @@ img {
 .cart-item-cost b {
   font-size: 13px;
   line-height: 16px;
-  color: #999999;
+  color: var(--cart-item-cost-color);
   font-weight: 500;
 }
 
@@ -1993,7 +2035,7 @@ img {
   margin-left: auto;
   font-size: 15px;
   line-height: 18px;
-  color: #323232;
+  color: var(--black-color);
   font-weight: 700;
 }
 
